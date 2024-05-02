@@ -19,10 +19,9 @@ qntd_num_repetidos = 0
 posicao = 0
 for i in (range(len(Vetor1)) and range(len(Vetor2))):
     posicao += 1
-    if Vetor1[i] in Vetor2:
-        if Vetor1[i] == Vetor2[i]:
-            qntd_num_repetidos += 1
-            print(f"Os números {Vetor1[i]} e {Vetor2[i]} são iguais e estão na mesma posição {posicao}")
+    if Vetor1[i] == Vetor2[i]:
+        qntd_num_repetidos += 1
+        print(f"Os números {Vetor1[i]} e {Vetor2[i]} são iguais e estão na mesma posição {posicao}")
             
 print(f"Os vetores 1 e 2 tem exatamente {qntd_num_repetidos} números repetidos.")
 
